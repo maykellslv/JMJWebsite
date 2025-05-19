@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cal+Sans&family=Glass+Antiqua&family=Kalnia:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Questrial&family=Rozha+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="party.css">
+<!-- Bootstrap CSS and Icon -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+  crossorigin="anonymous"
+/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+<!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: rgb(253,231,177);">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="index.html">
+      <img src="logo.png" alt="JMJ Events Place Logo" style="height: 50px; width: 50px; margin-right: 10px;">
+      <div>
+        <div>JMJ Events Place</div>
+        <small class="d-block text-muted">& Catering Services</small>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(93, 147, 255); font-weight: bold;">
+              Gallery
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(253,231,177);">
+              <li><a class="dropdown-item" href="gallery.html">Weddings</a></li>
+              <li><a class="dropdown-item" href="debut.html">Debut</a></li>
+              <li><a class="dropdown-item" href="party.html" style="color: rgb(93, 147, 255); font-weight: bold;">Children's Birthday Party</a></li>
+              <li><a class="dropdown-item" href="company.html">Corporate Event</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu & Package</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" id="faq-nav-link">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- FAQ Panel (hidden by default) -->
+<div id="faq-overlay" class="faq-overlay"></div>
+<div id="faq-panel" class="faq-panel">
+  <button id="faq-close" class="faq-close" aria-label="Close FAQ panel">&times;</button>
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+  
+  <div class="faq-container">
+    <div class="faq-item">
+      <button class="faq-question">What are your operating hours?</button>
+      <div class="faq-answer">
+        <p>Our venue is open from 8:00 AM to 10:00 PM daily. Special events can be arranged outside these hours with prior notice.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <button class="faq-question">What is your maximum capacity?</button>
+      <div class="faq-answer">
+        <p>Our main hall can accommodate up to 300 guests for seated events and 500 for standing receptions.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <button class="faq-question">Do you provide catering services?</button>
+      <div class="faq-answer">
+        <p>Yes, we offer full catering services with customizable menus. You can also bring in your own caterer with prior approval.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <button class="faq-question">What is your cancellation policy?</button>
+      <div class="faq-answer">
+        <p>Cancellations made 30+ days before the event receive a full refund. 15-29 days gets 50% refund. Less than 14 days is non-refundable.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Gallery -->
+<section class="gallery-container py-5">
+  <div class="container">
+    <h2 class="gallery-title text-center mb-5">Our Event Gallery</h2>
+
+    <div class="masonry-gallery">
+      <!-- Repeat these blocks with different images -->
+      <div class="gallery-item span-2-full">
+        <img src="bday1.jpg"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200" alt="Elegant wedding setup">
+      </div>
+      <div class="gallery-item span-2-full">
+        <img src="bday2.jpg"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="400" alt="Elegant wedding setup">
+      </div>
+      <div class="gallery-item span-2-full">
+        <img src="bday3.jpg"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="600" alt="Elegant wedding setup">
+      </div>
+      <div class="gallery-item span-2-full">
+        <img src="bday4.jpg"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="800" alt="Elegant wedding setup">
+      </div>
+      <div class="gallery-item span-2-full">
+        <img src="bday5.jpg"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200" alt="Elegant wedding setup">
+      </div>
+      <div class="gallery-item span-2-full">
+        <img src="bday6.jpg"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="400" alt="Elegant wedding setup">
+      </div>
+      <div class="gallery-item span-2-full">
+        <img src="bday7.jpg"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="600" alt="Elegant wedding setup">
+      </div>
+      <div class="gallery-item span-2-full">
+        <img src="bday8.jpg"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="800" alt="Elegant wedding setup">
+      </div>
+       <div class="gallery-item span-2-full">
+        <img src="bday9.jpg"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200" alt="Elegant wedding setup">
+      </div>
+      <div class="gallery-item span-2-full">
+        <img src="bday10.jpg"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="400" alt="Elegant wedding setup">
+      </div>
+      <div class="gallery-item span-2-full">
+        <img src="bday11.jpg"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="600" alt="Elegant wedding setup">
+      </div>
+      <div class="gallery-item span-2-full">
+        <img src="bday12.jpg"  data-aos="fade-up" data-aos-duration="1400" data-aos-delay="800" alt="Elegant wedding setup">
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="party.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
+    
+</body>
+</html>

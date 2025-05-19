@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JMJ's Website</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cal+Sans&family=Glass+Antiqua&family=Kalnia:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Questrial&family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Font Awesome for icons (add in head) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS and Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="preloader-wrapper">
+    <div class="preloader-container" id="preloader">
+      <div class="loading-text">PREPARING FOR YOUR WONDERFUL EXPERIENCE</div>
+      <div class="event-element-container">
+        <div class="event-element">Elegant Weddings</div>
+        <div class="event-element">Exquisite Catering</div>
+        <div class="event-element">Memorable Celebrations</div>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+</div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: rgb(253,231,177);">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="index.html">
+        <img src="logo.png" alt="JMJ Events Place Logo" style="height: 50px; width: 50px; margin-right: 10px;">
+        <div>
+          <div>JMJ Events Place</div>
+          <small class="d-block text-muted">& Catering Services</small>
+        </div>
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html"  style="color: rgb(93, 147, 255); font-weight: bold;" >Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gallery
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(253,231,177);">
+              <li><a class="dropdown-item" href="gallery.html">Weddings</a></li>
+              <li><a class="dropdown-item" href="debut.html">Debut</a></li>
+              <li><a class="dropdown-item" href="party.html">Children's Birthday Party</a></li>
+              <li><a class="dropdown-item" href="company.html">Corporate Event</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu & Package</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" id="faq-nav-link">FAQ</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FAQ Panel (hidden by default) -->
+  <div id="faq-overlay" class="faq-overlay"></div>
+  <div id="faq-panel" class="faq-panel">
+    <button id="faq-close" class="faq-close" aria-label="Close FAQ panel">&times;</button>
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">What are your operating hours?</button>
+        <div class="faq-answer">
+          <p>Our venue is open from 8:00 AM to 10:00 PM daily. Special events can be arranged outside these hours with prior notice.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">What is your maximum capacity?</button>
+        <div class="faq-answer">
+          <p>Our main hall can accommodate up to 300 guests for seated events and 500 for standing receptions.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Do you provide catering services?</button>
+        <div class="faq-answer">
+          <p>Yes, we offer full catering services with customizable menus. You can also bring in your own caterer with prior approval.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">What is your cancellation policy?</button>
+        <div class="faq-answer">
+          <p>Cancellations made 30+ days before the event receive a full refund. 15-29 days gets 50% refund. Less than 14 days is non-refundable.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Hero Section -->
+    <section class="hero-section" role="banner" aria-label="Main hero section">
+      <div class="fixed-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="row justify-content-center align-items-center h-100">
+          <div
+            class="col-md-8 hero-text text-center text-md-start"
+            tabindex="0"
+          >
+            <h1 class="name" style="font-size: 70px; color: white">
+              JMJ <br />
+              <span class="sub1 text-primary-dark" style="font-size: 60px;"
+                >Events Place &amp;</span
+              ><br />
+              <span class="sub2 text-primary-red" style="font-size: 60px;"
+                >Catering Services</span
+              >
+            </h1>
+            <p class="lead mb-3">
+              Where moments turn into memories—welcome to the perfect event
+              venue for your special occasion. Celebrate your next event with
+              us!
+            </p>
+            <button
+              type="button"
+              class="btn-primary"
+              style="font-size: 20px"
+              data-bs-toggle="modal"
+              data-bs-target="#eventModal"
+            >
+              Save the Date
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Modal -->
+    <div class="api-status" id="apiStatus">
+      <span class="loading-spinner" id="loadingSpinner"></span>
+      <span id="statusText">Reservation updated successfully!</span>
+    </div>
+
+    <!-- Event Modal -->
+    <div class="api-status" id="apiStatus">
+      <span class="loading-spinner" id="loadingSpinner"></span>
+      <span id="statusText">Reservation updated successfully!</span>
+    </div>
+
+    <!-- Event Modal -->
+    <div
+      class="modal fade"
+      id="eventModal"
+      tabindex="-1"
+      aria-labelledby="eventModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content custom-modal">
+          <div class="modal-header">
+            <h5 class="modal-title" id="eventModalLabel">Event Registration</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="eventForm">
+              <div class="row mb-4">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" />
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label">Event Type</label>
+                <div class="d-flex flex-wrap">
+                  <button
+                    type="button"
+                    class="btn event-type-btn active"
+                    data-event="wedding"
+                  >
+                    <i class="bi bi-hearts me-2"></i> Wedding
+                  </button>
+                  <button
+                    type="button"
+                    class="btn event-type-btn"
+                    data-event="birthday"
+                  >
+                    <i class="bi bi-stars"></i> Debut
+                  </button>
+                  <button
+                    type="button"
+                    class="btn event-type-btn"
+                    data-event="corporate"
+                  >
+                    <i class="bi bi-balloon-fill me-2"></i> Kids Party
+                  </button>
+                  <button
+                    type="button"
+                    class="btn event-type-btn"
+                    data-event="conference"
+                  >
+                    <i class="bi bi-briefcase-fill"></i> Corporate Event
+                  </button>
+                  <button
+                    type="button"
+                    class="btn event-type-btn"
+                    data-event="other"
+                  >
+                    <i class="bi bi-three-dots me-2"></i> Other
+                  </button>
+                </div>
+                <input
+                  type="hidden"
+                  id="eventType"
+                  name="eventType"
+                  value="wedding"
+                />
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-md-6 mb-3">
+                  <label for="eventDate" class="form-label">Event Date</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="eventDate"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Number of Guests*</label>
+                  <select class="form-select" id="guestCount" required>
+                    <option value="">Select guests</option>
+                    <option value="30">30 guests (₱45,000)</option>
+                    <option value="50">50 guests (₱52,000)</option>
+                    <option value="70">70 guests (₱58,250)</option>
+                    <option value="100">100 guests (₱65,000)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="specialRequests" class="form-label"
+                  >Special Requests</label
+                >
+                <textarea
+                  class="form-control"
+                  id="specialRequests"
+                  rows="3"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              type="button"
+              class="btn submit-btn text-white"
+              id="submitEvent"
+            >
+              <span id="submitText">Submit Registration</span>
+              <span
+                class="spinner-border spinner-border-sm"
+                id="submitSpinner"
+                style="display: none"
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade confirmation-modal"
+      id="confirmationModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content text-center">
+          <div class="modal-body p-4">
+            <div class="confirmation-icon">
+              <i class="bi bi-check-circle-fill" style="color: #67ae6e"></i>
+            </div>
+            <h4 class="mb-3">Booking Confirmed!</h4>
+            <p class="text-muted">
+              Please wait for the email that will be sent to you to finalize
+              your event.
+            </p>
+            <hr />
+            <div id="bookingDetails" class="text-start small mt-3"></div>
+            <hr />
+            <button class="btn btn-success mt-4 w-100" data-bs-dismiss="modal">
+              Done
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Gallery Section -->
+  <section class="py-5" aria-label="Gallery" style="padding-top: 0; background-color: #fff">
+    <div class="container" style="margin-top: 10px;">
+      <h2 class="gallery-title">Gallery</h2>
+      <div class="mx-auto mb-4" style="width: 80px; height: 3px; background: linear-gradient(90deg, #f48c06, #d00000);"></div>
+    <p class="lead text-muted mb-5" style="font-family: 'Questrial', sans-serif; text-align: center; max-width: 800px; margin: 0 auto;"">
+      Explore our versatile venue spaces designed to accommodate various events and celebrations.
+    </p>
+      <div class="row g-4 gallery-container" style="align-items: center; justify-content: center;">
+        <!-- Four unique images with relevant alt text and distinct headings -->
+         
+        <div class="gallery-item col-11 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000" tabindex="0" role="img" aria-label="Elegant wedding setup with floral decorations">
+          <div class="gallery-image-wrapper" style="background-image: url('wed_main.jpg');">
+            <div class="gallery-overlay">
+              <h3>Weddings</h3>
+              <p>Beautifully curated venues for unforgettable wedding celebrations</p>
+              <button class="gallery-btn" onclick="location.href='gallery.html'">View More &#x1F81A;</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item col-11 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="1500" tabindex="0" role="img" aria-label="Corporate conference event with guests">
+          <div class="gallery-image-wrapper" style="background-image: url('debut_main.jpg');">
+            <div class="gallery-overlay">
+              <h3>Debuts</h3>
+              <p>Elegant spaces to celebrate a grand 18th birthday in style</p>
+              <button class="gallery-btn" onclick="location.href='debut.html'">View More &#x1F81A;</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item col-11 col-md-6 col-lg-3"  data-aos="fade-up" data-aos-duration="1600" data-aos-delay="2000" tabindex="0" role="img" aria-label="Banquet style party with elegant table settings">
+          <div class="gallery-image-wrapper" style="background-image: url('bday_main.jpg');">
+            <div class="gallery-overlay">
+              <h3>Kids Parties</h3>
+              <p>Fun-filled and colorful venues for memorable kids’ celebrations</p>
+              <button class="gallery-btn" onclick="location.href='party.html'">View More &#x1F81A;</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item col-11 col-md-6 col-lg-3"  data-aos="fade-up" data-aos-duration="1800" data-aos-delay="2500" tabindex="0" role="img" aria-label="Outdoor catering setup with food and guests">
+          <div class="gallery-image-wrapper" style="background-image: url('corp_main.jpg');">
+            <div class="gallery-overlay">
+              <h3>Corporate Events</h3>
+              <p>Professional spaces for meetings, conferences, and company gatherings</p>
+              <button class="gallery-btn" onclick="location.href='company.html'">View More &#x1F81A;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" style="background-color: #FFFCF5">
+    <div class="container text-center">
+      <h2 class="ser" tabindex="0"
+      style="
+      font-family: 'Bebas Neue', cursive;
+      font-weight: 700;
+      font-size: 3.5rem;
+      color: #dba800;
+      text-transform: uppercase;
+      user-select: none;
+      margin-bottom: 0;
+      letter-spacing: 2px;
+      text-align: center;
+    ">Services</h2>
+    <div class="mx-auto mb-4" style="width: 80px; height: 3px; background: linear-gradient(90deg, #f48c06, #d00000);"></div>
+    <p class="lead text-muted mb-5" style="font-family: 'Questrial', sans-serif; text-align: center; max-width: 800px; margin: 0 auto;"">
+      Explore our versatile venue spaces designed to accommodate various events and celebrations.
+    </p>  
+    <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service-box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000" tabindex="0" aria-label="Services and Rentals: Provide some info">
+            <h3>Services &amp; Rentals</h3>
+            <p>We offer full event services including venue rental, decorations, sound systems, and more to tailor your event perfectly.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" tabindex="0" aria-label="Catering: Provide some info">
+            <h3>Catering</h3>
+            <p>Delicious and customizable menus prepared fresh for all types of events, from small gatherings to large celebrations.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000" tabindex="0" aria-label="Menu: Provide some info">
+            <h3>Menu</h3>
+            <p>Explore our diverse menu options ranging from traditional dishes to modern cuisine that suits all tastes and dietary needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Customer Reviews Carousel -->
+<section id="customer-reviews" style="background-color: #fff;" aria-label="Customer Reviews">
+  <div class="container text-center">
+    <h2 tabindex="0"
+        style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 2.1rem; color: #dba800; text-transform: uppercase; user-select: none; margin-bottom: 0; letter-spacing: 2px; text-align: left; margin-bottom: 10px;">
+      Customer Reviews
+    </h2>
+    <div class="mb-4" style="width: 30%; height: 3px; background: linear-gradient(90deg, #f48c06, #d00000);"></div>    
+
+    <div id="reviewsCarousel" class="carousel slide mb-5 mt-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Review 1 -->
+        <div class="carousel-item active text-center" tabindex="0">
+          <img src="review1.jpg" class="rounded-circle mb-3" alt="Princess Janelle Oteyza-Mallari" width="100" height="100" />
+          <div aria-label="Five star rating" class="mb-2">⭐⭐⭐⭐⭐</div>
+          <p><em>💯Highly Recommended🩷 Very accomodating and approchable ng mga staff. (Especially to ms jam, thankyouverymuch po🙂🌸)
+          💯 Maganda event styling perfect! Okay din ang food, masarap🙂 Till next time po . ….</em></p>
+          <h5><strong>Aiko Pacilan Placido</strong></h5>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="carousel-item text-center" tabindex="0">
+          <img src="review2.jpg" class="rounded-circle mb-3" alt="Martin Cruz" width="100" height="100" />
+          <div aria-label="Five star rating" class="mb-2">⭐⭐⭐⭐⭐</div>
+          <p><em>Will recommend it! Goods lahat service,foods,staff and venue 5 out of 5</em></p>
+          <h5><strong>Jenela Baldoza </strong></h5>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="carousel-item text-center" tabindex="0">
+          <img src="review3.jpg" class="rounded-circle mb-3" alt="Sophia Reyes" width="100" height="100" />
+          <div aria-label="Four star rating" class="mb-2">⭐⭐⭐⭐☆</div>
+          <p><em>super ganda nang pag kaka setup nang kanilang venue kung ano gusto mue ayun yung gagawin nila high recommend ang kanilang venue masarap ang mga food nila</em></p>
+          <h5><strong>Jomabel Macasero</strong></h5>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="carousel-item text-center" tabindex="0">
+          <img src="review4.jpg" class="rounded-circle mb-3" alt="Sophia Reyes" width="100" height="100" />
+          <div aria-label="Four star rating" class="mb-2">⭐⭐⭐⭐☆</div>
+          <p><em>Super highly recommended!! 💖  Elegant set ups, delicious food and super accommodating staff specially Ms.Jham 😊💜</em></p>
+          <h5><strong>Danica De Guzman-Roco </strong></h5>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="carousel-item text-center" tabindex="0">
+          <img src="review5.jpg" class="rounded-circle mb-3" alt="Sophia Reyes" width="100" height="100" />
+          <div aria-label="Four star rating" class="mb-2">⭐⭐⭐⭐☆</div>
+          <p><em>I highly recommend JMJ Events Place. Great food, good ambiance, nice place and very accomodating staffs. Most importantly, value for money. Thank you po for accommodating us. God bless 🥰🤩😍</em></p>
+          <h5><strong>Princess Janelle Oteyza-Mallar</strong></h5>
+        </div>
+
+      </div>
+
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev" aria-label="Previous review">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next" aria-label="Next review">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- Calendar -->
+  <section id="availability-calendar" class="py-5" aria-label="Availability Calendar" style="background-color: #FFFCF5">
+    <div class="container">
+      <h2 class="section-title" style="
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: #de5c2d;
+      text-transform: uppercase;
+      user-select: none;
+      margin-bottom: 2rem;
+      letter-spacing: 2px;
+      text-align: center;
+      ">
+        Check Availability For Reservation
+      </h2>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="calendar-container">
+            <div class="calendar-header">
+              <button id="prev-month" class="calendar-nav" aria-label="Previous month">&lt;</button>
+              <h3 id="current-month-year" style="font-family: 'Bebas Neue', cursive; letter-spacing: 1px;">June 2023</h3>
+              <button id="next-month" class="calendar-nav" aria-label="Next month">&gt;</button>
+            </div>
+            
+            <div class="calendar-weekdays">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            
+            <div id="calendar-dates" class="calendar-dates"></div>
+          </div>
+          
+          <div class="availability-legend mt-4 text-center">
+            <div class="legend-item">
+              <span class="legend-color available"></span>
+              <span>Available</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color booked"></span>
+              <span>Booked</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color limited"></span>
+              <span>Limited Availability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Us Section -->
+  <section id="about" data-aos="aos-fade" aria-label="About us" style="background-color: #FFFCF5">
+    <div class="container pb-5">
+      <div class="row align-items-center g-5">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+          <img
+            src="JMJ.jpg"
+            class="img-fluid rounded"
+            alt="About Us catering image showing staff preparing food and event setup"
+            tabindex="0"
+          />
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <h2 tabindex="0">About Us</h2>
+          <p tabindex="0">
+            We turn your special moments into unforgettable memories with elegant venues and exceptional catering. 
+            Our dedicated team brings creativity, warmth, and attention to detail to every event because your celebration deserves nothing less. 
+            From intimate gatherings to grand occasions, we make sure every detail reflects your vision. At JMJ, 
+            we don't just host event. We create experiences. Let us help you celebrate life's 
+            most meaningful moments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class=" footer-separator bg-dark text-white py-4" aria-label="Site footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Company Info -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h3 class="h5 mb-3" tabindex="0">JMJ Catering</h3>
+          <address class="mb-2" tabindex="0">
+            Quezon City, Metro Manila, Philippines
+          </address>
+          <br> <!-- Separator -->
+          <p class="mb-2" tabindex="0">
+            <a href="mailto:contact@jmjcatering.com" class="text-warning text-decoration-none">contact@jmjcatering.com</a>
+          </p>
+          <p class="mb-2" tabindex="0">
+            <a href="tel:+639123456789" class="text-warning text-decoration-none">+63 912 345 6789</a>
+          </p>
+          <br class="d-lg-none"> <!-- Mobile-only separator -->
+        </div>
+  
+        <!-- Social Links -->
+        <div class="col-lg-6 text-lg-end">
+          <div class="social-links d-flex justify-content-lg-end justify-content-start">
+            <a href="#" class="text-warning mx-3 fs-4" aria-label="Facebook" tabindex="0">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-warning mx-3 fs-4" aria-label="Instagram" tabindex="0">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-warning mx-3 fs-4" aria-label="Twitter" tabindex="0">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <br> <!-- Separator -->
+          <p class="mt-3 mb-0" tabindex="0">
+            &copy; 2025 JMJ Catering. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+    <script src="form-submit.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
