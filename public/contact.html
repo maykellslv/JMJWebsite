@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JMJ's Website</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cal+Sans&family=Glass+Antiqua&family=Kalnia:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Questrial&family=Rozha+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Bootstrap CSS and Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: rgb(253,231,177);">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="index.html">
+        <img src="logo.png" alt="JMJ Events Place Logo" style="height: 50px; width: 50px; margin-right: 10px;">
+        <div>
+          <div>JMJ Events Place</div>
+          <small class="d-block text-muted">& Catering Services</small>
+        </div>
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gallery
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(253,231,177);">
+              <li><a class="dropdown-item" href="gallery.html">Weddings</a></li>
+              <li><a class="dropdown-item" href="debut.html">Debut</a></li>
+              <li><a class="dropdown-item" href="party.html">Children's Birthday Party</a></li>
+              <li><a class="dropdown-item" href="company.html">Corporate Event</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu & Package</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" style="color: rgb(93, 147, 255); font-weight: bold;">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" id="faq-nav-link">FAQ</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FAQ Panel (hidden by default) -->
+  <div id="faq-overlay" class="faq-overlay"></div>
+  <div id="faq-panel" class="faq-panel">
+    <button id="faq-close" class="faq-close" aria-label="Close FAQ panel">&times;</button>
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">What are your operating hours?</button>
+        <div class="faq-answer">
+          <p>Our venue is open from 8:00 AM to 10:00 PM daily. Special events can be arranged outside these hours with prior notice.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">What is your maximum capacity?</button>
+        <div class="faq-answer">
+          <p>Our main hall can accommodate up to 300 guests for seated events and 500 for standing receptions.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Do you provide catering services?</button>
+        <div class="faq-answer">
+          <p>Yes, we offer full catering services with customizable menus. You can also bring in your own caterer with prior approval.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">What is your cancellation policy?</button>
+        <div class="faq-answer">
+          <p>Cancellations made 30+ days before the event receive a full refund. 15-29 days gets 50% refund. Less than 14 days is non-refundable.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- About Us -->
+  <div class="bg">
+  <section class="contact-section pt-4">
+    <div class="container bg-white" style="z-index: 2;">
+      <!-- Map and Contact Info Row -->
+      <div class="row flex-column-reverse flex-lg-row g-0">
+        <div class="col-lg-6">
+          <div class="contact-info">
+            <h1 class="fw-bold mt-3">Contact Details</h1>
+            <p class="lead">We'd love to hear from you! Reach out with any questions.</p>
+            
+            <h4><i class="fas fa-map-marker-alt me-2"></i> Our Location</h4>
+            <p class="mb-3">22 Governor Pascual Avenue, Malabon, Philippines</p>
+            
+            <h4><i class="fas fa-phone-alt me-2"></i> Phone Number</h4>
+            <p class="mb-3">+1 (123) 456-7890</p>
+            
+            <h4><i class="fas fa-envelope me-2"></i> Email Address</h4>
+            <p class="mb-3">hello.jmjeventsplace@gmail.com</p>
+            
+            <h4><i class="fas fa-clock me-2"></i> Working Hours</h4>
+            <p class="mb-0">Mon-Fri: 9:00 AM - 6:00 PM</p>
+            <p class="mb-0">Sat: 10:00 AM - 4:00 PM</p>
+            <p class="mb-0">Sun: Closed</p>
+          </div>
+        </div> 
+        
+        <div class="col-lg-6">
+          <div class="map-container">
+            <h2 class="px-3 pt-3 text-center fs-15 mb-3 fw-bold">Reach Us!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1929.874767174027!2d120.94576764670569!3d14.670150487318532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b45bcdfe7fc9%3A0x8276233d73b52842!2s22%20Gov.%20Pascual%20Ave%2C%20Malabon%2C%201470%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1746694523458!5m2!1sen!2sph"
+             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+     
+      <!-- Contact Form -->
+      <div class="row mt-5">
+        <div class="col-lg-12">
+          <div class="contact-form">
+            <h2 class="mb-4">Send Us a Message</h2>
+            <form>
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="phone" class="form-label">Mobile Number</label>
+                  <input type="tel" class="form-control" id="phone" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="contact.js"></script>
+    
+</body>
+</html>

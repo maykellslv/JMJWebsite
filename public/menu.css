@@ -1,0 +1,460 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+    color: #222;
+    line-height: 1.6;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+  }
+
+  .navbar-brand, .navbar-nav{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* gallery */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+  }
+
+.navbar .nav-link:hover {
+  color: #3ABEFF;
+  width: 100%;
+}
+
+
+/* FAQ Side Window */
+.faq-panel {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 90%;
+    max-width: 500px;
+    height: 100vh;
+    background: white;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    z-index: 1100;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    padding: 20px;
+  }
+
+  .faq-panel.open {
+    left: 0;
+  }
+
+  .faq-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1099;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .faq-overlay.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .faq-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #444;
+  }
+
+  .faq-title {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 900;
+    font-size: 2.75rem;
+    margin-bottom: 30px;
+    color: #444;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+
+  .faq-container {
+    padding-bottom: 40px;
+  }
+
+  .faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 15px 0;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px;
+  }
+
+  .faq-question:after {
+    content: '+';
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+  }
+
+  .faq-question.active:after {
+    content: '-';
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 15px;
+  }
+
+  .faq-answer p {
+    padding-bottom: 15px;
+    margin: 0;
+  }
+
+  /* gallery */
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+  }
+
+/* Menu */
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('menu.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 50px;
+}
+
+  .content {
+    padding: 40px;
+    text-align: center;}
+
+    .menu-section-bg {
+        background: url('bg.jpg') center/cover;
+        position: relative;
+        padding: 40px 0;
+    }
+    
+    .menu-section-bg::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+    
+    .menu {
+        position: relative;
+        z-index: 2;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.95);
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .menu-container {
+        position: relative;
+        padding: 20px;
+        border: 2px solid #e0c9a6;
+    }
+    
+    .menu-container::before {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        border: 1px solid #e0c9a6;
+        pointer-events: none;
+    }
+    
+    .menu-header {
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+        padding-bottom: 15px;
+    }
+    
+    .menu-header::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(to right, transparent, #e0c9a6, transparent);
+    }
+    
+    .menu-header h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 42px;
+        color: #4a3822;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+    
+    .menu-section {
+        margin-bottom: 28px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .menu-section h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        color: #6b5028;
+        margin-bottom: 15px;
+        position: relative;
+        display: inline-block;
+        padding-right: 15px;
+        background: #f8f5f2;
+        z-index: 1;
+    }
+    
+    .menu-section::after {
+        content: "";
+        position: absolute;
+        top: 18px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #e0c9a6;
+        z-index: 0;
+    }
+    
+    .menu-items {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 12px;
+        padding-left: 15px;
+    }
+    
+    .menu-items li {
+        padding: 6px 12px;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        border-left: 3px solid transparent;
+    }
+    
+    .menu-items li:hover {
+        border-left-color: #e0c9a6;
+        transform: translateX(5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .price-note {
+        font-size: 14px;
+        color: #b07d45;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+    
+    @media (max-width: 768px) {
+        .menu {
+            padding: 15px;
+        }
+        
+        .menu-container {
+            padding: 15px;
+        }
+        
+        .menu-header h1 {
+            font-size: 32px;
+        }
+        
+        .menu-section h2 {
+            font-size: 20px;
+        }
+        
+        .menu-items {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    /* Food category icons */
+    .menu-section h2::before {
+        font-family: sans-serif;
+        margin-right: 10px;
+        font-size: 18px;
+        opacity: 0.7;
+    }
+    /* Package */
+
+    .package {
+        font-family: Arial, sans-serif;
+        position: relative;
+        z-index: 2;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.95);
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .package-container {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding: 20px;
+    border-bottom: 2px solid #e0c9a6;
+}
+
+  .header::before{
+    content: '';
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        border: 1px solid #e0c9a6;
+        pointer-events: none;
+  }
+  
+  .header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-20%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #e0c9a6, transparent);
+    }
+
+  .title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 15px;
+  }
+  .subtitle {
+      color: #666;
+      font-size: 1.2rem;
+  }
+  .column-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+  }
+
+  .package-content{
+    padding: 30px;
+    text-align: left;
+  }
+
+  .inclusion-list {
+      list-style-type: none;
+      padding-left: 0;
+  }
+  .inclusion-list li {
+      padding: 8px 0;
+      border-bottom: 1px dotted #eee;
+  }
+  .pricing-section {
+      margin-top: 40px;
+      padding: 30px;
+  }
+  .section-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 20px;
+  }
+  .gradient-border {
+      border: 1px solid transparent;
+      border-radius: 5px;
+      background: linear-gradient(white, white) padding-box,
+                  linear-gradient(to right, #ff9a9e, #fad0c4) border-box;
+      padding: 2px;
+  }
+  .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+  }
+  .pricing-table th {
+      background-color: #f8f9fa;
+      padding: 15px;
+      font-weight: bold;
+  }
+  .pricing-table td {
+      padding: 15px;
+      background-color: white;
+  }
+  .price {
+      font-weight: bold;
+      color: #d63384;
+      font-size: 1rem;
+  }
+  .styling-section {
+      margin-top: 30px;
+  }
+
+
+   /* Footer */
+  footer {
+    background-color: #222;
+    color: #ddd;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+  }
+
+  footer h5 {
+    font-weight: 700;
+    color: #ffca28;
+    margin-bottom: 0.5rem;
+  }
+
+  footer p,
+  footer a {
+    color: #ddd;
+    margin-bottom: 0.3rem;
+    text-decoration: none;
+  }
+
+  footer a:hover,
+  footer a:focus {
+    color: #ffca28;
+    outline: none;
+  }

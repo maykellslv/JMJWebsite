@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMJ Events Place & Catering - Loading</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(bg.jpg);
+            font-family: "Times New Roman", Times, serif;
+            overflow: hidden;
+            
+        }
+
+        body::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.01);
+        z-index: -1;
+        }
+        
+        .preloader-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+        }
+        
+        .load-container {
+            position: relative;
+            width: 220px;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0px;
+
+        }
+        
+        .logos {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            opacity: 1;
+            z-index: 10;
+            animation: blink 5s infinite;
+        }
+
+        .loading-text {
+            color: #7d4b26;
+            font-size: 16px;
+            letter-spacing: 3px;
+            font-family: 'Playfair Display', serif;
+            text-transform: uppercase;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .event-element-container {
+            position: relative;
+            width: 260px;
+            height: 40px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .event-element {
+            position: absolute;
+            font-size: 22px;
+            color: #8a6d46;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: appear 6s infinite;
+        }
+        
+        .event-element:nth-child(1) {
+            animation-delay: 0s;
+        }
+        
+        .event-element:nth-child(2) {
+            animation-delay: 2s;
+        }
+        
+        .event-element:nth-child(3) {
+            animation-delay: 4s;
+        }
+        
+        .progress-bar {
+            width: 200px;
+            height: 2px;
+            background-color: #e0d6c3;
+            border-radius: 1px;
+            margin-top: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .progress {
+            height: 100%;
+            background: linear-gradient(to right, #c9b382, #8a6d46);
+            width: 0%;
+            animation: progress 3s ease-in-out infinite;
+            position: relative;
+        }
+        
+        .progress::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, transparent, #d6bc7a, transparent);
+            animation: shimmer 1.5s infinite;
+        }
+
+
+        /** Animations **/
+                @keyframes blink {
+            0% {
+        transform: scale(0.7);
+        opacity: 0.6;
+        }
+            50% {
+        transform: scale(0.8);
+        opacity: 1;
+        }
+            100% {
+        transform: scale(0.7);
+        opacity: 0.6;
+        }
+    }
+
+     
+        @keyframes progress {
+            0% {
+                width: 0%;
+            }
+            50% {
+                width: 70%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+            @keyframes appear {
+            0%, 5% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            15%, 25% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            30%, 100% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+        }
+
+ 
+    </style>
+</head>
+<body>
+    <div class="preloader-container" id="preloader">
+        <div class="loading-text">PREPARING FOR YOUR WONDERFUL EXPERIENCE</div>
+        <!-- text -->
+        <div class="event-element-container">
+            <div class="event-element">Elegant Weddings</div>
+            <div class="event-element">Exquisite Catering</div>
+            <div class="event-element">Memorable Celebrations</div>
+        </div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+     <button id="backToTopBtn" title="Go to top">↑</button>
+
+</body>
+</html>
